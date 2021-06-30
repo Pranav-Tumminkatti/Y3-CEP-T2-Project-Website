@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Pranav Tumminkatti</title>
+	<link href="Home.css" rel="stylesheet" type="text/css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="author" content="Pranav Tumminkatti">
+	<meta name="description" content="A website providing information on ageism">
+	<meta name="robots" content="all">
+
+<!--Google font stylesheets-->
+    <link href='https://fonts.googleapis.com/css?family=Amethysta' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Bebas Neue' rel='stylesheet'>
+
+</head>
+<body>
+
+    <!--Navigation Bar-->
+    <div class="flex-container">
+        <div><img src="Logo.jpeg" style='width:3vw;' alt=""></div>
+        <div class="nav">
+            <ul>
+                <li><a href="Home.html" class='active' id='home'>Home</a></li>
+                <div class="dropdown"> 
+                    <li><a href="Ageism.html">Ageism</a></li>
+                    <div class="dropdown-content">
+                        <a href="Ageism.html#section1">What is ageism?</a>
+                        <a href="Ageism.html#section2">Why is ageism a problem for society?</a>
+                        <a href="Ageism.html#section3">What are some of the negative impacts of ageism?</a>
+                        <a href="Ageism.html#section4">Solutions to ageism</a>
+                    </div>
+                </div>
+                <div class="dropdown"> 
+                    <li><a href='#'>Gallery</a></li>
+                    <div class="dropdown-content">
+                            <a href="Gallery.html">Gallery Type 1</a>
+                            <a href="Gallery Type 2.html">Gallery Type 2</a>
+                        </div>
+                </div>
+            </ul>
+        </div>
+        <div class="contactus"><a href="Contact_us.html">Contact Us</a></div>
+    </div>
+
+    <!--Landing Page-->
+    <div class='content'>
+        <div id='cover'>
+            <h1><strong>Unveiled</strong></h1>
+            <h4>Shedding light on society's lurking issues</h4>
+            <p>~ Courage cannot be unveiled without reality ~</p>
+        </div>
+
+        <!--Quotes-->
+         <blockquote>
+            <p><q>Age has no reality except in the physical world. The essence of a human being is resistant to the passage of time.</q></p>
+            <footer>— Gabriel García Márquez</footer>
+          </blockquote>
+          <blockquote id='align-right'>
+            <p><q>I think that ageism is a cultural illness; it's not a personal illness.</q></p>
+            <footer>Frances McDormand —</footer>
+          </blockquote>
+          <blockquote>
+            <p><q>Ageism is a prejudice against our own future selves.</q></p>
+            <footer>— Ashton Applewhite</footer>
+          </blockquote>
+        
+        <!--Our Services Menu with expanding grid-->
+        <div class='services'>
+            <h2 id='services-header'>Our Services</h2>
+    
+            <div class="row">
+                <div class="column" id='fst' onclick="openTab('b1');">Talk shows on hot topics</div>
+                <div class="column" id='snd' onclick="openTab('b2');">Forums discussing existential issues</div>
+                <div class="column" id='trd' onclick="openTab('b3');">Raising funds to tackle these issues</div>
+            </div>
+            
+            <!-- The expanding grid (hidden by default) -->
+            <div id="b1" class="containerTab" style="display:none;background:lightgreen">
+                <span onclick="this.parentElement.style.display='none'" class="closebtn">x</span>
+                <h2>Talk shows on hot topics</h2>
+                <p>We organise talk shows twice a week to showcase attention-worthy current topics in society.
+                    Our guest speakers include Mr Pranav Tumminkatti, a veteran in social advocacy and a professor at Yale University.
+                    You can catch our talkshows live at FM 92.4, Channel 5 from 8 to 9 pm every Monday and Friday, or on YouTube where we post all our talkshows.
+                </p>
+            </div>
+            
+            <div id="b2" class="containerTab" style="display:none;background:lightblue">
+                <span onclick="this.parentElement.style.display='none'" class="closebtn">x</span>
+                <h2>Forums discussing existential issues</h2>
+                <p>Our forums are a safe space for you to express your views and opinions on current hot topics and issues.
+                    Join fellow citizens to debate on a particular issue. 
+                    All the proposed solutions will be looked through and if deemed well thought of, some may even be proposed to the government and brought up in parliment.
+                    Associated contributors will also receive valuable credits.
+                    So what are you waiting for? Start posting now!
+                </p>
+            </div>
+            
+            <div id="b3" class="containerTab" style="display:none;background:lightcoral">
+                <span onclick="this.parentElement.style.display='none'" class="closebtn">x</span>
+                <h2>Raising funds to tackle these issues</h2>
+                <p>Our company has been allocated SGD 3.2 million by the government to fund psoposals to tackle issues in society.
+                    We will carefully use these funds to financially support anybody who can come up with a reasonable solution to a problem in society.
+                    You will also be paired up with an expert in that certain field and will work to implement this solution and tackle the problem.
+                    Don't lose the valuable and life-changing opportunity! Start thinking and start posting today!
+                </p>
+            </div>
+        </div>
+    </div>
+    
+    <!--Find out more button-->
+    <a href='Ageism.html' type="button" id='next-button'>Find out more</button></a>
+
+    <!--Footer-->
+    <footer class="footer">
+        <h2 style='text-align:center;padding:1.5vh;'>About us</h2>
+        <div class='footer-content'>
+            <div class='left'>
+                <h3><a href="https://goo.gl/maps/7dX6ENZguR2nM77u8" target="_blank">Location</a></h3>
+                <p>1 Raffles Institution Lane,</p>
+                <p>Singapore 575954</p>
+            </div>
+
+            <div class='middle'>
+                <h3><a href='Contact_us.html'>Contact</a></h3>
+                <p>(+65) 6419 9242</p>
+                <p>24ypran395i@student.ri.edu.sg</p>
+            </div>
+
+            <div class='right'>
+                <h3>Follow</h3>
+                <a href='https://www.instagram.com' target='_blank'>Instagram</a>
+                <a href='https://www.facebook.com' target='_blank'>Facebook</a>
+                <a href='https://twitter.com' target='_blank'>Twitter</a>
+            </div>
+        </div>
+    </footer>
+
+    <!--JavaScript code-->
+    <script type='text/javascript'>
+        // Hide all elements with class="containerTab", except for the one that matches the clickable grid column
+        function openTab(tabName) {
+        var i, x;
+        x = document.getElementsByClassName("containerTab");
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+        }
+        document.getElementById(tabName).style.display = "block";
+        }
+    </script>  
+
+</body>
+</html>

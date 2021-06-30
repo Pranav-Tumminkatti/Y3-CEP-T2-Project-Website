@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Pranav Tumminkatti</title>
+	<link href="Gallery.css" rel="stylesheet" type="text/css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="author" content="Pranav Tumminkatti">
+	<meta name="description" content="A website providing information on ageism">
+	<meta name="robots" content="all">
+
+<!--Google font stylesheets-->
+  <link href='https://fonts.googleapis.com/css?family=Amethysta' rel='stylesheet'>
+
+<!--JQuery-->
+  <script type="text/javascript" src="http://code.jquery.com/jquery-1.10.0.min.js"></script>
+
+</head>
+<body>
+
+  <!--Navigation Bar-->
+  <div class="flex-container">
+    <div><img src="Logo.jpeg" style='width:3vw;' alt=""></div>
+    <div class="nav">
+        <ul>
+            <li><a href="Home.html">Home</a></li>
+            <div class="dropdown">
+                <li><a href="Ageism.html">Ageism</a></li>
+                <div class="dropdown-content">
+                  <a href="Ageism.html#section1">What is ageism?</a>
+                  <a href="Ageism.html#section2">Why is ageism a problem for society?</a>
+                  <a href="Ageism.html#section3">What are some of the negative impacts of ageism?</a>
+                  <a href="Ageism.html#section4">Solutions to ageism</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <li><a href='#' class='active'>Gallery</a></li>
+                <div class="dropdown-content">
+                        <a href="Gallery.html">Gallery Type 1</a>
+                        <a href="Gallery Type 2.html">Gallery Type 2</a>
+                    </div>
+            </div>
+        </ul>
+    </div>
+    <div class="contactus"><a href="Contact_us.html">Contact Us</a></div>
+  </div>
+
+  <!--Gallery-->
+  <div class='content'>
+      <div class="row">
+          <div class="column">  <!--Column 1-->
+            <img src="Extra/Raise-Funds.jpg" style="width:100%" class='pic' alt='We raise funds for a good cause.'>
+            <img src="Extra/tkshowpic.jpg" style="width:100%" class='pic' alt='We organise talkshows.'>
+            <img src="Extra/Unknowns.jpg" style="width:100%" class='pic' alt='The reality of ageism.'>
+            <img src="Extra/pic9.jpg" style="width:100%" class='pic' alt='Ageism is like a price tag on a person.'>
+            <img src="Extra/forum1.jpg" style="width:100%" class='pic' alt='You can use our forums to contribute to fruitful discussions on existential issues.'>
+            <img src="Extra/agstats.jpeg" style="width:100%" class='pic' alt='Statistics describing ageism at the workplace.'>
+            <img src="Extra/jwbd.jpeg" style="width:100%" class='pic' alt='Common myths about the aged.'>
+          </div>
+
+          <div class="column">  <!--Column 2-->
+            <img src="Extra/images-3.jpeg" style="width:100%" class='pic' alt='Confused elderly man looking at a sophisticated smartphone.'>
+            <img src="Extra/Unknown-6.jpeg" style="width:100%" class='pic' alt='Ageism poster.'>
+            <img src="Extra/images-5.jpeg" style="width:100%" class='pic' alt='A sign showing a age limit of 35, like a speed limit sign.'>
+            <img src="Extra/Unknown-3.jpeg" style="width:100%" class='pic' alt='The elderly competing with the young for resources.'>
+            <img src="Extra/ATW_ageism_GFX2-01_dfnprd.png" style="width:100%" class='pic' alt='Why ageism exists in the first place.'>
+            <img src="Extra/dekwkm.jpeg" style="width:100%" class='pic' alt='Ageism stats in the US.'>
+            <img src="Extra/mrstats.png" style="width:100%" class='pic' alt='Age discrimination in the workplace.'>
+          </div>
+
+          <div class="column">  <!--Column 3-->
+            <img src="Extra/images-2.png" style="width:100%" class='pic' alt='Ageism is everywhere.'>
+            <img src="Extra/images-6.jpeg" style="width:100%" class='pic' alt='Clipart of Ageism.'>
+            <img src="Extra/images-7.jpeg" style="width:100%" class='pic' alt='Ageism in the healthcare industry is a growing concern.'>
+            <img src="Extra/Unknown-4.jpeg" style="width:100%" class='pic' alt='Statistics on the instances of ageism faced by the elderly everyday.'>
+            <img src="Extra/talkshow2.jpeg" style="width:100%" class='pic' alt='Our talk show studio.'>
+            <img src="Extra/ijerph-16-01329-g001.png" style="width:100%" class='pic' alt='Mindmap on Ageism.'>
+            <img src="Extra/raising-funds-for-startup.jpg.webp" style="width:100%" class='pic' alt='Tap on our funding to turn your idea into reality.'>
+          </div>
+
+          <div class="column">  <!--Column 4-->
+            <img src="Extra/Raise-Funds.jpg" style="width:100%" class='pic' alt='We raise funds for a good cause.'>
+            <img src="Extra/images.jpeg" style="width:100%" class='pic' alt='A new ageism? Fallout from the pandemic.'>
+            <img src="Extra/images.png" style="width:100%" class='pic' alt='Worrying stats about ageism.'>
+            <img src="Extra/Unknown-5.jpeg" style="width:100%" class='pic' alt='Promoting positive views on ageing.'>
+            <img src="Extra/raising-funds-for-startup.jpg.webp" style="width:100%" class='pic' alt='Collecting funds to support the needy and the deserving.'>
+            <img src="Extra/iwjd.jpeg" style="width:100%" class='pic' alt='Anecdotal evidence on ageism.'>
+            <img src="Extra/section 4.jpeg" style="width:100%" class='pic' alt='Strategy to eliminate ageism.'>
+          </div>
+      </div>
+  </div>
+
+  <!-- The Modal -->          
+  <div id="myModal" class="modal">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="img01">
+    <div id="caption"></div>
+  </div>
+
+  <!--Footer-->
+  <footer class="footer">
+    <h2 style='text-align:center;padding:1.5vh;'>About us</h2>
+    <div class='footer-content'>
+        <div class='left'>
+            <h3><a href="https://goo.gl/maps/7dX6ENZguR2nM77u8" target="_blank">Location</a></h3>
+            <p>1 Raffles Institution Lane,</p>
+            <p>Singapore 575954</p>
+        </div>
+
+        <div class='middle'>
+            <h3><a href='Contact_us.html'>Contact</a></h3>
+            <p>(+65) 6419 9242</p>
+            <p>24ypran395i@student.ri.edu.sg</p>
+        </div>
+
+        <div class='right'>
+            <h3>Follow</h3>
+            <a href='https://www.instagram.com' target='_blank'>Instagram</a>
+            <a href='https://www.facebook.com' target='_blank'>Facebook</a>
+            <a href='https://twitter.com' target='_blank'>Twitter</a>
+        </div>
+    </div>
+  </footer>
+
+  <!--JavaScript code-->
+  <script type='text/javascript'>
+    // Get the modal
+    var modal = document.getElementById('myModal');
+
+    // Get the image and insert it inside the modal - use its "alt" text as a caption
+    var modalImg = document.getElementById("img01");
+    var captionText = document.getElementById("caption");
+		Array.from(document.querySelectorAll(".pic")).forEach(item => {
+      item.addEventListener("click", event => {
+		  modal.style.display = "block";
+      modalImg.src = item.src;
+      captionText.innerHTML = item.alt;
+      });
+    });
+    
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function() {
+      modal.style.display = "none";
+    }
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,250 @@
+*{
+    box-sizing: border-box;
+}
+
+/*Navigation Bar*/
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3.3vh;
+  background-color: black;
+  color: white;
+  position: fixed;  
+  top: 0;
+  right: 0;
+  left: 0;
+  flex-direction: row;
+  z-index: 5;
+}
+
+.nav ul li {
+  display: inline;
+  padding: 1.3vh;
+}
+
+.nav ul li a{
+  text-decoration: none;
+  color: white;
+  font-family: 'Amethysta';
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.contactus a{
+  text-decoration: none;
+  color: white;
+  background-color: salmon;
+  padding: 1.3vh;
+  border-radius: 6px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 200px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  margin: 5px 0px;
+  z-index: 1;
+}
+
+.dropdown:hover, .nav li a:hover{
+  border-bottom: 2px solid grey;
+}
+
+.dropdown:hover .dropdown-content{
+  display: block;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover{
+  background-color:  #f1f1f1;
+}
+
+.active{
+  border-bottom: 2px solid grey;              
+}
+
+@media screen and (max-width: 800px) {
+  .flex-container {
+    flex-direction: column;
+  }
+  .nav ul li a {
+    flex-direction: column;
+    width: 100%;
+  }
+}  
+
+body{
+  margin: 0;
+  background-color: peachpuff;
+  background-size: cover;
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+/*Gallery*/
+div.gallery {
+  border: 1px solid #ccc;
+  margin-top: 15vh;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+  opacity: 0.85;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+  text-shadow: 1px 1px 0.5px white;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+
+/*Switch from a 4-column layout to a 2-column layout when viewport width falls below 700px*/
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+    margin-top: 20vh;
+  }
+}
+
+/*Switch from a 2-column layout to a 1-column layout when viewport width falls below 500px*/
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/*Text beneath the gallery*/
+.text-div{
+  text-align: center;
+  padding: 4vh;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 3vw;
+}
+
+.text-div h4{
+  text-decoration: underline;
+}
+
+.text-div button{
+  background-color: salmon; 
+  border: none;
+  color: white;
+  padding: 1.3vh;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1.3vw;
+  width: 16%;
+  transition-duration: 0.5s;
+}
+
+.text-div button:hover{
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  width: 17%;
+}
+
+.text-div h5{
+  margin: 0;
+  margin-left: 0.6vw;
+  display: inline-block;
+}
+
+/*Footer*/
+.content {
+  flex: 1 0 auto;
+  z-index: 1;
+}
+
+.footer {
+  flex-shrink: 0;
+  padding: 5vh;
+  padding-bottom: 8vh;
+  margin-top: 2vh;
+}
+
+.footer h2{
+  text-align: center;
+  padding: 2vh;
+  font-size: 2vw;
+}
+.footer-content {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+}
+
+.footer-content h3{
+  font-family: 'Proza Libre';
+  font-weight: bolder;
+  font-size: 1.7vw;
+}
+
+.footer-content h3 a{
+  color: black;
+  font-style: none;
+  text-decoration: none;
+}
+
+.footer-content p{
+  font-size: 1.2vw;
+}
+
+@media screen and (max-width: 800px) {
+  .footer-content {
+    flex-direction: column;
+    text-align: center;
+  }
+}  
+
+.right{
+  display: flex;
+  flex-direction: column;
+}
+
+.right a{
+  padding-top: 0;
+  padding-bottom: 0.8vh;
+  font-size: 1.2vw;
+}
+
+.right a:link {
+  color: blue;
+}
+
+.right a:visited {
+  color: blueviolet;
+}
+
+.right a:hover {
+  color: hotpink;
+}

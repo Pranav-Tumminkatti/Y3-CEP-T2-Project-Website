@@ -1,0 +1,302 @@
+*{
+    box-sizing: border-box;
+}
+
+/*Navigation Bar*/
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3.3vh;
+  position: fixed;  
+  top: 0;
+  right: 0;
+  left: 0;
+  flex-direction: row;
+  z-index: 1;
+}
+
+.change{                          /*Class to be added to .flex-container when the page is scrolled*/
+  background-color: black;
+  transition-duration: 0.5s;
+}
+
+.nav ul li {
+  display: inline;
+  padding: 1.3vh;
+}
+
+.nav ul li a{
+  text-decoration: none;
+  color: white;
+  font-family: 'Amethysta';
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.contactus a{
+    text-decoration: none;
+    color: white;
+    background-color: salmon;
+    padding: 1.3vh;
+    border-radius: 6px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 200px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  margin: 5px 0px;
+  z-index: 1;
+}
+
+.dropdown:hover, .nav li a:hover{
+    border-bottom: 2px solid grey;
+}
+  
+.dropdown:hover .dropdown-content{
+  display: block;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover{
+  background-color:  #f1f1f1;
+}
+
+.active{
+  border-bottom: 2px solid grey;
+}
+
+@media screen and (max-width: 800px) {
+  .flex-container {
+    flex-direction: column;
+  }
+  .nav ul li a {
+    flex-direction: column;
+    width: 100%;
+  }
+}  
+
+body{
+  margin: 0;
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  background-image: url(Gradient_bg.png);
+  background-repeat: repeat-x;
+  background-attachment: fixed;
+}
+
+/*Landing Page*/
+#cover-page{
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.centered{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: whitesmoke;
+  font-family: 'Oswald';
+  font-size: 1.8vw;
+  text-shadow: 5px 5px 2px black;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/*Evidence of Ageism img with caption*/
+div.pic1 {
+  width: 50%;
+  margin: 17vh auto;
+  margin-bottom: 15vh;
+  animation-name: show;
+  animation-duration: 5s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+}
+
+@keyframes show {
+  0% {
+    opacity: 0;
+    visibility: none;
+  }
+  100% {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+div.pic1 img{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+div.container {
+  text-align: left;
+  font-style: italic;
+}
+
+/*Text content (Section 1-4)*/
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.text-right{
+  flex-direction: row;
+  margin-bottom: 13.5vh;  
+}
+
+.text-right img{
+  display: block;
+  width: 50%;
+  float: left;
+  padding: 2vw;
+  padding-top: 0;
+}
+
+.text-right.text{
+  width:50%;
+  float: right;
+  padding: 3vw;
+}
+
+.text p{
+  text-indent: 40px;
+  letter-spacing: 0.4px;
+  line-height: 1.5;
+  word-spacing: 1px;
+  padding: 0 1.5vw;
+  text-align: justify;
+  font-family: 'Rubik';
+}
+
+.text h3{
+  margin: 0 1.5vw;
+}
+
+.text-left{
+  flex-direction: row;
+  margin-bottom: 13.5vh;     
+}
+
+.text-left img{
+  display: block;
+  width: 50%;
+  float: right;
+  padding: 2vw;
+  padding-top: 0;
+}
+
+.text-left.text{
+  width:50%;
+  float: left;
+  padding: 3vw;
+}
+
+/*Scroll to top button*/
+#myBtn {
+  display: none; 
+  position: fixed; 
+  bottom: 20px; 
+  right: 30px; 
+  z-index: 99; 
+  border: none; 
+  outline: none; 
+  background-color: red; 
+  color: white;
+  cursor: pointer; 
+  padding: 15px; 
+  border-radius: 10px; 
+  font-size: 18px; 
+}
+
+#myBtn:hover {
+  background-color: #555; 
+}
+
+/*Footer*/
+.content {
+  flex: 1 0 auto;
+}
+
+.footer {
+  flex-shrink: 0;
+  padding: 5vh;
+  padding-bottom: 8vh;
+}
+
+.footer h2{
+  text-align: center;
+  padding: 2vh;
+  font-size: 2vw;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+}
+
+.footer-content h3{
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 1.7vw;
+}
+
+.footer-content h3 a{
+  color: black;
+  font-style: none;
+  text-decoration: none;
+}
+
+.footer-content p{
+  font-size: 1.2vw;
+}
+
+@media screen and (max-width: 800px) {
+  .footer-content {
+    flex-direction: column;
+    text-align: center;
+  }
+}  
+
+.right{
+  display: flex;
+  flex-direction: column;
+}
+
+.right a{
+  padding-top: 0;
+  padding-bottom: 0.8vh;
+  font-size: 1.2vw;
+}
+
+.right a:link {
+  color: blue;
+}
+
+.right a:visited {
+  color: blueviolet;
+}
+
+.right a:hover {
+  color: hotpink;
+}

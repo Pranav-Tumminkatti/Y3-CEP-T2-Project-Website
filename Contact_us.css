@@ -1,0 +1,237 @@
+*{
+  box-sizing: border-box;
+}
+
+/*Navigation Bar*/
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3.3vh;
+  background-color: black;
+  color: white;
+  position: fixed;  
+  top: 0;
+  width: 100%;
+  flex-direction: row;
+}
+
+.nav ul li {
+  display: inline;
+  padding: 1.3vh;
+}
+
+.nav ul li a{
+  text-decoration: none;
+  color: white;
+  font-family: 'Amethysta';
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.contactus a{
+  text-decoration: none;
+  color: white;
+  background-color: salmon;
+  padding: 1.3vh;
+  border-radius: 6px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 200px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  margin: 5px 0px;
+  z-index: 1;
+}
+
+.dropdown:hover, .nav li a:hover{
+  border-bottom: 2px solid grey;
+  transition: all 250ms ease-in-out;
+}
+
+.dropdown:hover .dropdown-content{
+  display: block;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover{
+  background-color:  #f1f1f1;
+}
+
+.active{
+  border-bottom: 2px solid grey;              
+}
+
+@media screen and (max-width: 800px) {
+  .flex-container {
+    flex-direction: column;
+  }
+  .nav ul li a {
+    flex-direction: column;
+    width: 100%;
+  }
+}  
+
+body{
+margin: 0;
+background-color: peachpuff;
+background-size: cover;
+font-family: sans-serif;
+display: flex;
+flex-direction: column;
+}
+
+#cover{
+  margin-top: 16vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40vh;
+  text-align: center;
+  font-size: 2vw;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+#cover h1{
+  color: #121212;
+  letter-spacing: 2px;
+  text-shadow: 0px 11px 10px rgba(81,67,21,0.8);
+}
+
+/*Responsive Form*/
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 10px;
+  margin-top: 16vh;
+}
+
+.column {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+  z-index: -1;
+}
+
+.column img{
+  width:100%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other*/
+@media screen and (max-width: 600px) {
+  .column, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+
+/*Footer*/
+.content {
+  flex: 1 0 auto;
+}
+
+.footer {
+  flex-shrink: 0;
+  padding: 5vh;
+  padding-bottom: 8vh;
+  margin-top: 2vh;
+}
+
+.footer h2{
+  text-align: center;
+  padding: 2vh;
+  font-size: 2vw;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+}
+
+.footer-content h3{
+  font-family: 'Proza Libre';
+  font-weight: bolder;
+  font-size: 1.7vw;
+}
+
+.footer-content h3 a{
+  color: black;
+  font-style: none;
+  text-decoration: none;
+}
+
+.footer-content p{
+  font-size: 1.2vw;
+}
+
+@media screen and (max-width: 800px) {
+  .footer-content {
+    flex-direction: column;
+    text-align: center;
+  }
+}  
+
+.right{
+  display: flex;
+  flex-direction: column;
+}
+
+.right a{
+  padding-top: 0;
+  padding-bottom: 0.8vh;
+  font-size: 1.2vw;
+}
+
+.right a:link {
+  color: blue;
+}
+
+.right a:visited {
+  color: blueviolet;
+}
+
+.right a:hover {
+  color: hotpink;
+}
